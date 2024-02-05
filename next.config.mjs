@@ -8,6 +8,7 @@ const basePath = `/${repo}`
 
 
 const nextConfig = process.env.NODE_ENV === 'production' ? {
+  output: 'export',
   assetPrefix: assetPrefix,
   basePath: basePath,
   images: {
@@ -22,8 +23,7 @@ const nextConfig = process.env.NODE_ENV === 'production' ? {
   reactStrictMode: true,
   compiler: {
     styledComponents: true
-  },
-  output: 'export'
+  }
 };
 
 export default nextConfig;
